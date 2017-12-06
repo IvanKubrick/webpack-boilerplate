@@ -21,6 +21,12 @@ module.exports = {
             })}
         ]
     },
+    devServer: {
+        contentBase: PATHS.dist,
+        compress: true,
+        stats: 'errors-only',
+        open: true
+    },
     plugins: [
         new HtmlWebpackPlugin({
           title: 'My webpack project',
