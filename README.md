@@ -3,14 +3,14 @@
 ### Setup
 
 ```sh
-$ npm install
+$ yarn install
 ```
 
 ### Development
 ```sh
-$ npm run dev
+$ yarn run dev
 ```
 ### Build
 ```sh
-$ npm run prod
+$ yarn run prod
 ```  
