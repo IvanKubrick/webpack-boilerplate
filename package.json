@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server",
-    "prod": "yarn run clean && webpack -p",
-    "clean": "rimraf ./dist/*"
+    "prod": "webpack -p"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.17",
