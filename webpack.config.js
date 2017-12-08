@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const PATHS = {
     src: path.join(__dirname, 'src'),
@@ -28,6 +29,7 @@ module.exports = {
         open: true
     },
     plugins: [
+        new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
           title: 'My webpack project',
           template: PATHS.src + '/template.html'
